@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    text-align: center;
+    position: absolute;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .cell {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .cell:hover {
+    background-color: #cfd8dc;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  #restart-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #restart-button:hover {
+    background-color: #45a049;
+  }
+  
+  .scratch-line {
+    position: absolute;
+    height: 5px;
+    background-color: red;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.8;
+    z-index: 10;
+  }
+  
+  
